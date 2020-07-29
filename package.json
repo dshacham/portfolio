@@ -1,7 +1,7 @@
 {
-  " name": "portfolio",
+  " name": "Dana Shacham Portfolio",
   "version": "1.0.0",
-  "description": "des",
+  "description": "My portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -9,6 +9,10 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -30,6 +34,5 @@
       "last 1 safari version"
     ]
   },
-  "author": "naqvi",
   "license": "ISC"
 }
