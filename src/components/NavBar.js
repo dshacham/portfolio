@@ -12,7 +12,7 @@ const NavBar = () => {
             <p><NavLink to="/">&lt;D&gt;</NavLink></p>
             <ul className="pages">
                 <li><HashLink to="#about" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>About</HashLink></li>
-                <li><NavLink to="/projects">Projects</NavLink></li>
+                <li><HashLink to="#projects" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Projects</HashLink></li>
             </ul>
             <ul className="contact">
                 <li>
