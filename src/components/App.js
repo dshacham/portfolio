@@ -11,9 +11,11 @@ function App() {
       <Context.Provider>
         <Router>
           <NavBar />
-          <Switch>
+          {/* <Switch>
             <Route path="/" exact component={Home} />
-          </Switch>
+            <Route path="/about" exact component={About} />
+          </Switch> */}
+          <Home />
         </Router>
       </Context.Provider>
     </div>

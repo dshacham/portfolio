@@ -1,0 +1,17 @@
+@import 'App';
+
+.projects-container {
+    text-align: center;
+
+    h2 {
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .projects {
+        display: flex;
+        img {
+            width: 40%;;
+        }
+    }
+}
