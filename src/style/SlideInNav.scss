@@ -45,7 +45,7 @@
             padding: 1rem 1rem 1.5rem;
             background-color: black;
             animation-duration: 0.5s;
-            width: 30vw;
+            width: 50%;
         }
     
         .slide-in-anim {
@@ -84,14 +84,6 @@
             border-bottom: 2px solid $yellow;
             color: $yellow;
         }
-    
-        // .selected {
-        //     border-bottom: 2px solid black;
-        // }
-    
-        // .selected:hover {
-        //     border-bottom: 1px solid $mid-red;
-        // }
     
         li {
             margin-top: 2rem;

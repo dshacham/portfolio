@@ -15,7 +15,6 @@ const NavBar = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-
     return (
         <nav className="navbar">
             <p onClick={scrollTop}>&lt;D&gt;</p>

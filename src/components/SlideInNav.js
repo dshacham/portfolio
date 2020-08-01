@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import HamburgerMenu from 'react-hamburger-menu';
-import Context from './Context';
 import '../style/SlideInNav.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
