@@ -7,7 +7,7 @@
     background-size: cover;
     width: 100%;
     position: relative;
-    top: 4.2rem;
+    top: 3.7rem;
     z-index: -1;
     box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(216, 216, 216);
     animation: make-visible 2s ease-in forwards;
@@ -23,7 +23,7 @@
         margin: 8rem auto 11rem;
         text-align: center;
         transform: rotate(13deg);
-        max-width: 96%;
+        max-width: 90%;
         padding-left: 1.5rem;
 
         h2 {
@@ -41,6 +41,102 @@
 
         h5 {
             font-size: 2vw; //1.5rem
+        }
+    }
+}
+
+@media screen and (max-width: 330px) and (min-width: 250px) {
+    .intro-container {
+        .intro {
+            padding-left: 1rem;
+            h2 {font-size: 14vw;}
+            h3 {font-size: 11.5vw;}
+            h4 {font-size: 9.8vw;}
+            h5 {font-size: 4vw;}
+        }
+    }
+}
+
+@media screen and (max-width: 399px) and (min-width: 331px) {
+    .intro-container {
+        .intro {
+            padding-left: 1rem;
+            h2 {font-size: 12vw;}
+            h3 {font-size: 9.5vw;}
+            h4 {font-size: 8.5vw;}
+            h5 {font-size: 4vw;}
+        }
+    }
+}
+
+@media screen and (max-width: 450px) and (min-width: 400px) {
+    .intro-container {
+        .intro {
+            padding-left: 1rem;
+            h2 {font-size: 10vw;}
+            h3 {font-size: 8vw;}
+            h4 {font-size: 7.3vw;}
+            h5 {font-size: 4vw;}
+        }
+    }
+}
+
+@media screen and (max-width: 450px) and (min-width: 400px) {
+    .intro-container {
+        .intro {
+            padding-left: 1rem;
+            h2 {font-size: 10vw;}
+            h3 {font-size: 8vw;}
+            h4 {font-size: 7.3vw;}
+            h5 {font-size: 4vw;}
+        }
+    }
+}
+
+@media screen and (max-width: 499px) and (min-width: 451px) {
+    .intro-container {
+        .intro {
+            padding-left: 1rem;
+            h2 {font-size: 9.5vw;}
+            h3 {font-size: 7vw;}
+            h4 {font-size: 6.5vw;}
+            h5 {font-size: 4vw;}
+        }
+    }
+}
+
+@media screen and (max-width: 580px) and (min-width: 500px) {
+    .intro-container {
+        .intro {
+            padding-left: 1rem;
+            h2 {font-size: 8.5vw;}
+            h3 {font-size: 6vw;}
+            h4 {font-size: 5.8vw;}
+            h5 {font-size: 3vw;}
+        }
+    }
+}
+
+@media screen and (max-width: 681px) and (min-width: 581px) {
+    .intro-container {
+        .intro {
+            padding-left: 1rem;
+            h2 {font-size: 8vw;}
+            h3 {font-size: 5.5vw;}
+            h4 {font-size: 5.1vw;}
+            h5 {font-size: 3vw;}
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 682px) {
+    .intro-container {
+        .intro {
+            padding-left: 1rem;
+            h2 {font-size: 7.5vw;}
+            h3 {font-size: 5vw;}
+            h4 {font-size: 4.7vw;}
+            h5 {font-size: 3vw;}
         }
     }
 }

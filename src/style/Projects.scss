@@ -2,7 +2,7 @@
 
 .projects-container {
     text-align: center;
-    margin: 7rem 9rem 10rem;
+    margin: 6rem 9rem 10rem;
 
     .h2-box {
         width: fit-content;
@@ -61,5 +61,35 @@
         .project-card:hover {
                 box-shadow: 0.1rem 0.1rem 0.4rem 0.1rem rgb(189, 189, 189);
             }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects-container {
+        margin: 5rem 1rem 10rem;
+        .projects {
+            .project-card {
+                max-width: 40rem;
+                max-height: 45rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 813px) and (min-width: 769px) {
+    .projects-container {
+        margin: 5rem 1rem 10rem;
+    }
+}
+
+@media screen and (max-width: 878px) and (min-width: 814px) {
+    .projects-container {
+        margin: 5rem 3rem 10rem;
+    }
+}
+
+@media screen and (max-width: 1006px) and (min-width: 879px) {
+    .projects-container {
+        margin: 5rem 5rem 10rem;
     }
 }

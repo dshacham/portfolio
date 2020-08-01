@@ -1,7 +1,7 @@
 @import 'App';
 
 .about {
-    margin: 7rem auto 1rem;
+    margin: 6rem auto 0;
     width: 100%;
     text-align: center;
 
@@ -39,6 +39,59 @@
                 font-weight: 100;
                 line-height: 1.5;
                 font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .about {
+        .outer-text-box {
+            margin: 0 1rem;
+            .text-box {
+                width: 95%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    .about {
+        .outer-text-box {
+            margin: 0 3rem;
+            .text-box {
+                width: 85%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 939px) and (min-width: 769px) {
+    .about {
+        .outer-text-box {
+            margin: 0 5rem;
+            .text-box {
+                width: 85%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 940px) {
+    .about {
+        .outer-text-box {
+            .text-box {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+    .about {
+        .outer-text-box {
+            .text-box {
+                width: 75.5%;
             }
         }
     }
