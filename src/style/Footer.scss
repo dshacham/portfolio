@@ -10,6 +10,10 @@
         justify-content: space-around;
         align-items: center;
         
+        .btt {
+            font-size: 5rem;
+        }
+
         button {
             cursor: pointer;
             font-size: 3rem;
@@ -19,12 +23,12 @@
             background-color: rgb(230, 230, 230);
         }
     
-        .btt {
-            font-size: 5rem;
-        }
-    
         button:hover {
             text-shadow: 2px 2px $yellow;
+        }
+
+        button:focus {
+            outline: 0;
         }
     }
 
