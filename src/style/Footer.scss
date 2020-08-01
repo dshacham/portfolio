@@ -10,18 +10,20 @@
         justify-content: space-around;
         align-items: center;
         
-        .to-top {
+        button {
             cursor: pointer;
             font-size: 3rem;
             font-weight: 300;
             color: rgb(151, 151, 151);
+            border: hidden;
+            background-color: rgb(230, 230, 230);
         }
     
         .btt {
             font-size: 5rem;
         }
     
-        .to-top:hover {
+        button:hover {
             text-shadow: 2px 2px $yellow;
         }
     }

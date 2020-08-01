@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer">
             <ul>
                 <li className="my-name">© 2020 Dana Shacham</li>
-                <li className="btt"><a className="to-top" onClick={scrollTop}>&#94;</a></li>
+                <li className="btt"><button onClick={scrollTop}>&#94;</button></li>
             </ul>
         </div>
     )
