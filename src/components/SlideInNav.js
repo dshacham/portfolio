@@ -38,7 +38,7 @@ const SlideInNav = () => {
                     color='white'
                     strokeWidth={3}
                 />
-                <p onClick={scrollTop}>&lt;D&gt;</p>
+                <a className="logo" onClick={scrollTop}>&lt;D&gt;</a>
             </div>
             <nav className="slide-in">
                 {
