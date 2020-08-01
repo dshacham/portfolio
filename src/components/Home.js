@@ -5,10 +5,6 @@ import About from './About';
 import Projects from './Projects';
 
 const Home = () => {
-    const scrollTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);

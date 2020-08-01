@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import '../style/NavBar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,12 +6,22 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const NavBar = () => {
+
+    const hideHash = (e) => {
+        e.preventDefault();
+    };
+
+    const scrollTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+
     return (
         <nav className="navbar">
-            <p><NavLink to="/">&lt;D&gt;</NavLink></p>
+            <p onClick={scrollTop}>&lt;D&gt;</p>
             <ul className="pages">
-                <li><HashLink to="#about" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>About</HashLink></li>
-                <li><HashLink to="#projects" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Projects</HashLink></li>
+                <li><HashLink to="#about" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} onClick={hideHash}>About</HashLink></li>
+                <li><HashLink to="#projects" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} onClick={hideHash}>Projects</HashLink></li>
             </ul>
             <ul className="contact">
                 <li>
@@ -22,12 +31,12 @@ const NavBar = () => {
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/dana-shacham-937408163/" target="_blank">
-                        <FontAwesomeIcon className="icon" title="email me" icon={faLinkedin} />
+                        <FontAwesomeIcon className="icon" title="linkedin" icon={faLinkedin} />
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/dshacham/" target="_blank">
-                        <FontAwesomeIcon className="icon" title="email me" icon={faGithub} />
+                        <FontAwesomeIcon className="icon" title="github" icon={faGithub} />
                     </a>
                 </li>
             </ul>

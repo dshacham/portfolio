@@ -2,17 +2,64 @@
 
 .projects-container {
     text-align: center;
-    margin: 3rem auto 10rem;
+    margin: 7rem 9rem 10rem;
 
-    h2 {
-        font-size: 2.2rem;
-        margin-bottom: 3rem;
+    .h2-box {
+        width: fit-content;
+        position: relative;
+        z-index: 10;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        background-color: #fafafa;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: -1.2rem;
+            color: rgb(53, 53, 53);
+        }
     }
 
     .projects {
         display: flex;
-        img {
-            width: 40%;;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 3rem;
+        border-top: 1px solid rgb(196, 196, 196);
+        
+        .project-card {
+            max-width: 20rem;
+            max-height: 25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1 0 auto;
+            box-shadow: 0.1rem 0.1rem 0.4rem 0.1rem rgb(224, 224, 224);
+            border-radius: 0.2rem;
+            margin: 0.5rem 1rem;
+            padding: 0.5rem;
+            color: grey;
+            text-align: left;
+            background-color: white;
+
+            img {
+                width: 100%;
+                border-radius: 0.2rem;
+            }
+
+            .project-name {
+                color: black;
+                font-weight: 100;
+                margin: 0.5rem;
+            }
+
+            .project-desc {
+                font-weight: 100;
+                margin: 0 0.5rem 0.5rem;
+            }
         }
+
+        .project-card:hover {
+                box-shadow: 0.1rem 0.1rem 0.4rem 0.1rem rgb(189, 189, 189);
+            }
     }
 }

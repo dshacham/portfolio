@@ -14,16 +14,32 @@
     color: white;
     font-size: 1.5rem;
     position: fixed;
+    z-index: 100;
+    transform: translateY(-100%);
+    animation: slide-down 1s ease-in forwards;
+    opacity: 0;
+
+    @keyframes slide-down {
+        100% { 
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
 
     p {
         font-size: 5vw;
         padding: 0 5rem;
         position: absolute;
         left: 0;
+        cursor: pointer;
+    }
+
+    p:hover {
+        color: rgb(255, 243, 130);
     }
 
     .pages {
-        margin-right: 4rem;
+        margin-right: 2rem;
         font-weight: bold;
     }
     .pages>li {
@@ -41,3 +57,4 @@
         font-size: 2rem;
     }
 }
+
