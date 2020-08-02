@@ -11,7 +11,7 @@ const Intro = () => {
                     loop={Infinity}
                     wrapper="h3"
                 />
-                <h2>I'm Dana.</h2>
+                <h2>I'm Dana</h2>
                 <h5>Full Stack</h5>
                 <h4>WEB DEVELOPER</h4>
             </div>
