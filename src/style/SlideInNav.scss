@@ -48,7 +48,7 @@
     
         .ul-slide {
             position: absolute;
-            transform: translateX(-100%);
+            transform: translateX(-101%);
             border-bottom-right-radius: 0.3rem;
             padding: 1rem 1rem 1.5rem;
             background-color: black;
@@ -70,7 +70,7 @@
     
         @keyframes slide-out {
             0% { transform: translateX(0%); }
-            100% { transform: translateX(-100%); }
+            100% { transform: translateX(-101%); }
         }
     
         ul, ul a {

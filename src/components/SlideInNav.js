@@ -9,10 +9,14 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 const SlideInNav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false); //hamburger
     const [isMenuClicked, setIsMenuClicked] = useState(false); //sections/SM-list
+    const [isMenuClosed, setIsMenuClosed] = useState(true);
+    const [initClosed, setInitClosed] = useState(true);
 
     const handleMenuClick = () => {
         setIsMenuOpen(!isMenuOpen);
-        setIsMenuClicked(true);
+        setIsMenuClicked(!isMenuClicked);
+        setIsMenuClosed(!isMenuClosed);
+        setInitClosed(false);
     };
 
     const handleSectionClick = () => {
@@ -41,9 +45,10 @@ const SlideInNav = () => {
                 <button onClick={scrollTop}>&lt;D&gt;</button>
             </div>
             <nav className="slide-in">
-                {
+                {initClosed ? null
+                    :
                     isMenuClicked ?
-                        <ul className={isMenuOpen === false ? "ul-slide slide-out-anim" : "ul-slide slide-in-anim"}>
+                        <ul className={isMenuOpen ? "ul-slide slide-in-anim" : null}>
                             <li onClick={handleSectionClick}>
                                 <HashLink to="#about" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} onClick={hideHash}>About</HashLink>
                             </li>
@@ -67,7 +72,29 @@ const SlideInNav = () => {
                             </li>
                         </ul>
                         :
-                        null
+                        <ul className={isMenuClosed ? "ul-slide slide-out-anim" : null}>
+                            <li onClick={handleSectionClick}>
+                                <HashLink to="#about" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} onClick={hideHash}>About</HashLink>
+                            </li>
+                            <li onClick={handleSectionClick}>
+                                <HashLink to="#projects" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} onClick={hideHash}>Projects</HashLink>
+                            </li>
+                            <li>
+                                <a href="mailto: dshacham22@gmail.com" target="_blank">
+                                    <FontAwesomeIcon className="icon" title="email me" icon={faEnvelope} />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/dana-shacham-937408163/" target="_blank">
+                                    <FontAwesomeIcon className="icon" title="linkedin" icon={faLinkedin} />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/dshacham/" target="_blank">
+                                    <FontAwesomeIcon className="icon" title="github" icon={faGithub} />
+                                </a>
+                            </li>
+                        </ul>
                 }
             </nav>
         </div>
