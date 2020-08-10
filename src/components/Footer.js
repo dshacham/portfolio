@@ -8,7 +8,7 @@ const Footer = () => {
 
     return (
         <ul className="footer">
-            <li className="my-name">© 2020 Dana Shacham</li>
+            <li className="my-name">©2020 Dana Shacham</li>
             <li className="to-top"><p onClick={scrollTop}>&#94;</p></li>
         </ul>
     )
