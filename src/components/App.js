@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import Home from './Home';
 import Footer from './Footer';
 import SlideInNav from './SlideInNav';
+import Context from './Context';
 
 function App() {
   const [winWidth, setWinWidth] = useState('');
@@ -17,10 +18,11 @@ function App() {
       setWinWidth('desktop')
       :
       setWinWidth('mobile')
-  }, []);
+  });
 
   return (
     <div className="App">
+    <Context.Provider value={{ winWidth }}>
       <Router>
         {winWidth === 'desktop' ?
           <NavBar />
@@ -30,6 +32,7 @@ function App() {
         <Home />
         <Footer />
       </Router>
+      </Context.Provider>
     </div>
   );
 }

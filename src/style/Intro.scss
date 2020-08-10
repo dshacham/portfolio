@@ -5,9 +5,10 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgb(233, 217, 121);
     width: 100%;
     position: relative;
-    top: 3.6rem;
+    top: 5.1rem;
     z-index: -1;
     box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(216, 216, 216);
     animation: make-visible 2s ease-in forwards;
@@ -17,6 +18,11 @@
         100% { 
             opacity: 1;
         }
+    }
+
+    h6 {
+        font-weight: 300;
+        margin-bottom: 0.2rem;
     }
 
     .intro {

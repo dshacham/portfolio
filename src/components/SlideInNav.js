@@ -22,6 +22,7 @@ const SlideInNav = () => {
     const handleSectionClick = () => {
         setIsMenuClicked(false);
         setIsMenuOpen(false);
+        setIsMenuClosed(true);
     };
 
     const hideHash = (e) => {
