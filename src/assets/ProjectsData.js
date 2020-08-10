@@ -14,6 +14,13 @@ export default [
     },
 
     {
+        name: "Enlightened Heart",
+        desc: "A business web app for an alternative therapist (hebrew)",
+        img: "../../assets/images/dalia-thumb.png",
+        link: "https://dalia-sh.herokuapp.com/"
+    },
+
+    {
         name: "Magic Eight Ball",
         desc: "A small side project I played with from the course at DCI.",
         img: "../../assets/images/8ball-thumb.png",
