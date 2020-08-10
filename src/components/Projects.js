@@ -15,6 +15,7 @@ const Projects = () => {
                 <h2>Projects</h2>
             </div>
             <div className="projects">
+            <h3 className="projects-disc">*Projects that include server side might take up to 30 seconds to load.</h3>
                 {ProjectData.map(project => {
                     return (
                         <a href={project.link} target="_blank" key={project.name}>

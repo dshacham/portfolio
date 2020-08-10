@@ -8,6 +8,11 @@ const Intro = () => {
 
     return (
         <div className="intro-container">
+        {
+                winWidth === "desktop" ?
+            <h6>*For mobile version of all apps, refresh page under 768px.</h6>
+                : null
+            }
             <div className="intro">
                 <Typical
                     steps={['', 2000, 'Hello world!', 5000]}
@@ -18,11 +23,7 @@ const Intro = () => {
                 <h5>Full Stack</h5>
                 <h4>WEB DEVELOPER</h4>
             </div>
-            {
-                winWidth === "desktop" ?
-            <h6>*This web app is fully responsive! For mobile version, refresh page under 768px.</h6>
-                : null
-            }
+            
         </div>
     )
 }

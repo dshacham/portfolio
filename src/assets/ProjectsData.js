@@ -17,7 +17,7 @@ export default [
         name: "Enlightened Heart",
         desc: "A business web app for an alternative therapist (hebrew)",
         img: "../../assets/images/dalia-thumb.png",
-        link: "https://dalia-sh.herokuapp.com/"
+        link: "https://dalia-sh.web.app/"
     },
 
     {

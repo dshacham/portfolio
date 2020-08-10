@@ -1,14 +1,14 @@
 @import 'App';
 
 .intro-container {
-    background-image: url("../assets/images/computer-5369326_1920.jpg");
+    background-image: url("../assets/images/‏‏computer-nocoffee.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(233, 217, 121);
     width: 100%;
     position: relative;
-    top: 5.1rem;
+    top: 2rem;
     z-index: -1;
     box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(216, 216, 216);
     animation: make-visible 2s ease-in forwards;
@@ -22,20 +22,21 @@
 
     h6 {
         font-weight: 300;
-        margin-bottom: 0.2rem;
+        position: relative;
+        top: 3.2rem;
     }
 
     .intro {
-        margin: 8rem auto 11rem;
+        margin: 0 auto 11rem;
         text-align: center;
         transform: rotate(13deg);
-        max-width: 90%;
-        padding-left: 1.5rem;
+        max-width: 85%;
+        padding: 9rem 0 15rem;
 
         h2 {
             font-family: 'Indie Flower', cursive;
             font-size: 6vw; //5rem
-            text-shadow: 4px 4px $yellow;
+            text-shadow: 3px 3px $yellow;
         }
 
         h3 {
@@ -44,7 +45,7 @@
 
         h4 {
             font-size: 3.9vw; //3.3
-            text-shadow: 4px 4px $yellow;
+            text-shadow: 3px 3px $yellow;
         }
 
         h5 {
@@ -56,12 +57,9 @@
 @media screen and (max-width: 330px) and (min-width: 250px) {
     .intro-container {
         .intro {
-            padding-left: 1rem;
-            h2 {font-size: 14vw;
-                text-shadow: 2px 2px $yellow;}
+            h2 {font-size: 14vw;}
             h3 {font-size: 11.5vw;}
-            h4 {font-size: 9.8vw;
-                text-shadow: 2px 2px $yellow;}
+            h4 {font-size: 9.8vw;}
             h5 {font-size: 4vw;}
         }
     }
@@ -70,12 +68,9 @@
 @media screen and (max-width: 399px) and (min-width: 331px) {
     .intro-container {
         .intro {
-            padding-left: 1rem;
-            h2 {font-size: 12vw;
-                text-shadow: 2px 2px $yellow;}
+            h2 {font-size: 12vw;}
             h3 {font-size: 9.5vw;}
-            h4 {font-size: 8.5vw;
-                text-shadow: 2px 2px $yellow;}
+            h4 {font-size: 8.5vw;}
             h5 {font-size: 4vw;}
         }
     }
@@ -84,12 +79,9 @@
 @media screen and (max-width: 450px) and (min-width: 400px) {
     .intro-container {
         .intro {
-            padding-left: 1rem;
-            h2 {font-size: 10vw;
-                text-shadow: 2px 2px $yellow;}
+            h2 {font-size: 10vw;}
             h3 {font-size: 8vw;}
-            h4 {font-size: 7.3vw;
-                text-shadow: 2px 2px $yellow;}
+            h4 {font-size: 7.3vw;}
             h5 {font-size: 4vw;}
         }
     }
@@ -98,12 +90,9 @@
 @media screen and (max-width: 499px) and (min-width: 451px) {
     .intro-container {
         .intro {
-            padding-left: 1rem;
-            h2 {font-size: 9.5vw;
-                text-shadow: 2px 2px $yellow;}
+            h2 {font-size: 9.5vw;}
             h3 {font-size: 7vw;}
-            h4 {font-size: 6.5vw;
-                text-shadow: 2px 2px $yellow;}
+            h4 {font-size: 6.5vw;}
             h5 {font-size: 4vw;}
         }
     }
@@ -112,12 +101,9 @@
 @media screen and (max-width: 580px) and (min-width: 500px) {
     .intro-container {
         .intro {
-            padding-left: 1rem;
-            h2 {font-size: 8.5vw;
-                text-shadow: 2px 2px $yellow;}
+            h2 {font-size: 8.5vw;}
             h3 {font-size: 6vw;}
-            h4 {font-size: 5.8vw;
-                text-shadow: 2px 2px $yellow;}
+            h4 {font-size: 5.8vw;}
             h5 {font-size: 3vw;}
         }
     }
@@ -126,12 +112,9 @@
 @media screen and (max-width: 681px) and (min-width: 581px) {
     .intro-container {
         .intro {
-            padding-left: 1rem;
-            h2 {font-size: 8vw;
-                text-shadow: 2px 2px $yellow;}
+            h2 {font-size: 8vw;}
             h3 {font-size: 5.5vw;}
-            h4 {font-size: 5.1vw;
-                text-shadow: 2px 2px $yellow;}
+            h4 {font-size: 5.1vw;}
             h5 {font-size: 3vw;}
         }
     }
@@ -140,13 +123,19 @@
 @media screen and (max-width: 768px) and (min-width: 682px) {
     .intro-container {
         .intro {
-            padding-left: 1rem;
-            h2 {font-size: 7.5vw;
-                text-shadow: 2px 2px $yellow;}
+            h2 {font-size: 7.5vw;}
             h3 {font-size: 5vw;}
-            h4 {font-size: 4.7vw;
-                text-shadow: 2px 2px $yellow;}
+            h4 {font-size: 4.7vw;}
             h5 {font-size: 3vw;}
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .intro-container {
+        .intro {
+            h2 {text-shadow: 2px 2px $yellow;}
+            h4 {text-shadow: 2px 2px $yellow;}
         }
     }
 }
