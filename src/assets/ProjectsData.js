@@ -1,5 +1,12 @@
 export default [
     {
+        name: "FanFavorite",
+        desc: "Register to create lists of favorite fan fiction and episodes.",
+        img: "../../assets/images/fanfavorite-thumb.png",
+        link: "https://fanfavorite.herokuapp.com/"
+    },
+
+    {
         name: "Easy Vegan",
         desc: "A collection of easy vegan recipes with option to add more.",
         img: "../../assets/images/easyvegan-thumb.png",
